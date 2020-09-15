@@ -1,0 +1,26 @@
+.search-field-spacing {
+  width: 70%;
+}
+.header-search-field {
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+.dashboard-search-icon {
+  position: absolute;
+  left: 11.5%;
+  top: 4.9%;
+  color: rgba(134, 132, 132, 0.5);
+  font-size: 17px;
+}
+#search-field {
+  width: 30%;
+  margin: 10px 5%;
+  color: gray;
+  outline: none;
+  background: transparent;
+}
+#search-field:focus {
+  border-bottom: 1px solid rgba(134, 132, 132, 0.2);
+  transition: 1s;
+}

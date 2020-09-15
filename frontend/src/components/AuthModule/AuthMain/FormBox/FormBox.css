@@ -1,0 +1,18 @@
+.form-box {
+  width: 43%;
+  min-height: 74vh;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.1);
+}
+.auth-main {
+  position: absolute;
+  width: 94.2%;
+  height: 91.5%;
+  margin-left: 5.5%;
+  padding-top: 4%;
+  margin-top: 0.7%;
+  background-color: whitesmoke;
+  box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.1);
+}

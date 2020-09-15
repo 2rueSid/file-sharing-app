@@ -1,0 +1,49 @@
+.header-title {
+  display: flex;
+  justify-content: left;
+  width: 65%;
+}
+.header-title h2 {
+  margin-left: 2%;
+  margin-right: 8%;
+}
+
+#add-folder-btn {
+  position: relative;
+  color: dodgerblue;
+  font-size: 37px;
+  margin-right: 5%;
+  bottom: 9%;
+  cursor: pointer;
+}
+#add-folder-btn:hover {
+  color: royalblue;
+  transition: 1s;
+}
+
+.header-add-btn {
+  display: flex;
+  width: 35%;
+  margin-left: 10px;
+}
+.header-add-btn label {
+  width: 60%;
+  margin-top: 5%;
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: none;
+  border: 0;
+  outline: none;
+  font-size: 12px;
+  height: 25px;
+}
+
+#form-dialog-title {
+  text-align: center;
+  color: rgba(104, 102, 102, 0.637);
+}
+
+input[type='file'] {
+  display: none;
+}

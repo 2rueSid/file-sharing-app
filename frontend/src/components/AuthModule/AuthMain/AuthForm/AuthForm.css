@@ -1,0 +1,45 @@
+.input-group {
+  width: 70%;
+  margin: 10% auto;
+  padding-bottom: 11%;
+  transition: 0.5s;
+}
+.input-field-spacing {
+  width: 100%;
+}
+#input-field {
+  width: 100%;
+  padding: 7px 10px;
+  margin: 10px 0;
+  color: #111;
+  border: 1px solid rgba(134, 132, 132, 0.2);
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  margin-top: 5%;
+  width: 45%;
+  padding: 10px 9px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: none;
+  font-size: 11px;
+}
+
+.reset-link {
+  margin-top: 5%;
+  padding-left: 5%;
+  width: 49%;
+  font-size: 12px;
+}
+
+.event-message {
+  display: inline-block;
+  font-size: 12px;
+  width: 40%;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(134, 20, 20);
+}

@@ -1,0 +1,11 @@
+.event-message {
+  display: inline-block;
+  font-size: 12px;
+  width: 40%;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: dodgerblue;
+}
+.register button {
+  margin-left: 15%;
+}

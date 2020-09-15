@@ -1,0 +1,14 @@
+#expansion-menu-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0;
+}
+#expansion-menu-details div {
+  color: rgb(112, 111, 111);
+  width: 100%;
+  margin-top: 10%;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 200;
+}

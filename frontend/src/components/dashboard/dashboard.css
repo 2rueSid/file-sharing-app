@@ -1,0 +1,10 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 0.25fr repeat(3, 1fr) 0.7fr;
+  grid-template-rows: 0.6fr repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+  height: 100%;
+  font-family: sans-serif;
+}

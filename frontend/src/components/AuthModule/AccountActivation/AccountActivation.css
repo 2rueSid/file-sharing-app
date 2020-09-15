@@ -1,0 +1,28 @@
+.activate-main {
+  background-color: whitesmoke;
+}
+
+.activate-message {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  width: 40%;
+  height: 30%;
+  background-color: white;
+}
+
+.server-message {
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+.login-redirect {
+  position: relative;
+  top: 45%;
+  left: 65%;
+  font-family: sans-serif;
+}

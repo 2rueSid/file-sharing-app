@@ -1,0 +1,16 @@
+.dashboard-main {
+  grid-area: 2 / 2 / 6 / 5;
+  min-height: 100%;
+  border-top: 0.2px solid rgba(134, 132, 132, 0.2);
+  border-left: 1px solid rgba(134, 132, 132, 0.2);
+  border-left: 1px solid rgba(134, 132, 132, 0.2);
+  background-color: whitesmoke;
+}
+
+.workspace-main {
+  margin: 0 auto;
+  width: 96%;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 4%;
+}

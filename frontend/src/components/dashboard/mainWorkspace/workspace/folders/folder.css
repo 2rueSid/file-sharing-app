@@ -1,0 +1,67 @@
+.main-folders {
+  padding: 3% 5%;
+}
+
+.main-folders p {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgb(134, 141, 148);
+}
+
+.main-folders-elements {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.main-folders-element {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  width: 23%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 0.8px solid whitesmoke;
+  cursor: pointer;
+}
+.main-folders-element:hover {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 0 2px whitesmoke;
+  transition: 0.7s;
+}
+.main-folders-element:hover #folder-delete {
+  visibility: visible;
+  transition: 0.5s;
+}
+#folder-delete {
+  position: relative;
+  bottom: 40%;
+  left: 94%;
+  visibility: hidden;
+  color: red;
+  font-size: 10px;
+}
+.delete-message {
+  font-size: 12px;
+  font-weight: normal;
+  color: dodgerblue;
+  margin-left: 2%;
+}
+
+.folder-icon {
+  margin: 0 3%;
+  font-size: 30px;
+  color: dodgerblue;
+  position: relative;
+  bottom: 10%;
+}
+.main-folders-element .folder-title {
+  margin-left: 2%;
+  color: rgb(61, 60, 60);
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+}

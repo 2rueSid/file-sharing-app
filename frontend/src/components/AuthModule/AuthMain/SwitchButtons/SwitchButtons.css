@@ -1,0 +1,30 @@
+.button-box {
+  width: 100%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-button {
+  width: 48%;
+  cursor: pointer;
+  margin: 2% 1%;
+  background: transparent;
+  border-radius: none;
+  border: 0;
+  outline: none;
+  color: rgba(187, 178, 178, 0.9);
+}
+
+.toggle-button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+
+.activeBtn {
+  background-color: white;
+  color: rgb(44, 42, 42);
+}

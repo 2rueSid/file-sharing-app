@@ -1,0 +1,10 @@
+.dashboard-header {
+  grid-area: 1 / 2 / 2 / 6;
+  border-bottom: 1px solid rgba(134, 132, 132, 0.2);
+  border-left: 1px solid rgba(134, 132, 132, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  max-height: 15vh;
+  min-height: 15vh;
+}
