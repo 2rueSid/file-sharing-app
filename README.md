@@ -1,9 +1,6 @@
 # File sharing app
 > by Dima Kachurovskyy
 
-[![GitHub Issues](https://img.shields.io/badge/issues-6%20open-green)](https://github.com/WiseEngineering/kachurovskyy-files/issues) 
-[![GitHub Pulls](https://img.shields.io/badge/pull%20requests-0%20open-orange)](https://github.com/WiseEngineering/kachurovskyy-files/pulls)
-
 This project is made within the **Wise School** course.
 
 Simple file sharing app created with React.js, Express and MySQL.
