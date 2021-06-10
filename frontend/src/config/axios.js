@@ -6,5 +6,5 @@ export default Axios.create({
     Authorization: `Bearer ${cookie.get('token')}`,
   },
   withCredentials: true,
-  baseURL: 'http://localhost:8080/api/',
+  baseURL: 'http://localhost:5000/',
 });

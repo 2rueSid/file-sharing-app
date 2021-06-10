@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import Header from './Header/header';
-import LeftMenu from './leftMenu/leftMenu';
-import MainWorkspace from './mainWorkspace/mainWorkspace';
-import RightMenu from './rightMenu/rightMenu';
-import './dashboard.css';
+import LeftMenu from './LeftMenu/leftMenu';
+import MainWorkspace from './MainWorkspace/mainWorkspace';
+import RightMenu from './RightMenu/rightMenu';
+import './Dashboard.css';
 
 class Dashboard extends React.Component {
   constructor() {
@@ -14,34 +15,38 @@ class Dashboard extends React.Component {
       searchedResult: null,
     };
   }
-  getFileInfo = file => {
+  getFileInfo = (file) => {
     this.setState(() => {
       return { file: file };
     });
   };
-  getSearchedResult = result => {
+  getSearchedResult = (result) => {
     this.setState({ searchedResult: result });
   };
   render() {
     const { file, searchedResult } = this.state;
 
     return (
-      <div className="dashboard">
+      <div className='dashboard'>
         <Header getSearchedResult={this.getSearchedResult} />
         <LeftMenu />
         <Router>
           <Switch>
             <Route
               path={'/dashboard/share/:share_token'}
-              component={props => <MainWorkspace {...props} getFile={this.getFileInfo} />}
+              component={(props) => (
+                <MainWorkspace {...props} getFile={this.getFileInfo} />
+              )}
             />
             <Route
               path={'/dashboard/folder/:folder_id'}
-              component={props => <MainWorkspace {...props} getFile={this.getFileInfo} />}
+              component={(props) => (
+                <MainWorkspace {...props} getFile={this.getFileInfo} />
+              )}
             />
             <Route
               path={'/dashboard'}
-              component={props => (
+              component={(props) => (
                 <MainWorkspace
                   {...props}
                   getFile={this.getFileInfo}

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './workspaceHeader/workspaceHeader';
-import WorkspaceBody from './workspace/workspace';
+import Header from '../WorkspaceHeader/workspaceHeader';
+import WorkspaceBody from '../Workspace/workspace';
 import './mainWorkspace.css';
 
 function MainWorkspace(props) {
@@ -9,7 +9,7 @@ function MainWorkspace(props) {
   const { params } = match;
 
   return (
-    <div className="dashboard-main">
+    <div className='dashboard-main'>
       <Header params={params} />
       <WorkspaceBody
         getFile={getFile}

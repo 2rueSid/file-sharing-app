@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderSearch from './headerSearch/searchContainer';
-import HeaderInfo from './headerInfo/headerInfoContainer';
+import HeaderSearch from '../HeaderSearch/searchContainer';
+import HeaderInfo from '../HeaderInfo/headerInfoContainer';
 
 import './header.css';
 

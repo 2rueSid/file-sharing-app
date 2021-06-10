@@ -1,8 +1,6 @@
-package-lock.json
 *.log
 *.txt
 node_modules/
-.*.json
 .eslintignore
 .vscode
 .env
@@ -10,4 +8,3 @@ uploads
 .editorconfig
 prettier.config.js
 .eslintrc.js
-lib/database/migration

@@ -1,12 +1,16 @@
+const fs = require('fs');
+const dotenv = require('dotenv');
+const envConfig = dotenv.parse(fs.readFileSync(`.env`));
+
 const config = {
   development: {
     client: 'mysql2',
     connection: {
-      host: process.env.DB_HOST,
-      database: process.env.DB_NAME,
+      host: envConfig.DB_HOST,
+      database: envConfig.DB_NAME,
       port: '3306',
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD,
+      user: envConfig.DB_USER,
+      password: envConfig.DB_PASSWORD,
     },
     migrations: {
       directory: './lib/database/migration',

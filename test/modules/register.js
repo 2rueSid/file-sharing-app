@@ -9,30 +9,34 @@ const registerModule = (server, chai, proxyquire, sinon, stubs) => {
       fakeRegister = proxyquire('../../lib/controllers/registerController.js', {
         '../models/userModel': stubs.userStub,
         '../utils/errorHandler': stubs.errorHandlerStub,
+        '../models/linksModel': stubs.linkStub,
+        '../email/emailNotification': stubs.emailStub,
       });
       fakeRequest = {
         body: null,
+        validateErrors: [],
       };
       fakeResponse = {};
     });
 
-    it('should create new user', done => {
+    it('should create new user', (done) => {
       chai
         .request(server)
-        .post('/register')
-        .send(stubs.fakeUser)
+        .post('/auth/register')
+        .send({ user: stubs.fakeUser })
         .end((err, res) => {
           should.not.exist(err);
           res.status.should.equal(200);
           done();
         });
     });
-    it('should not create new user because email allready in use', done => {
+
+    it('should not create new user because email allready in use', (done) => {
       chai
         .request(server)
-        .post('/register')
+        .post('/auth/register')
         .send({
-          email: 'mekahff.@gmail.com',
+          user: { email: 'mekahff.@gmail.com' },
         })
         .end((err, res) => {
           should.not.exist(err);
@@ -41,15 +45,15 @@ const registerModule = (server, chai, proxyquire, sinon, stubs) => {
           done();
         });
     });
-    it('should return status 400 because there are no user data', done => {
+
+    it('should return status 400 because there are no user data', (done) => {
       chai
         .request(server)
         .post('/register')
-        .send({})
+        .send({ user: {} })
         .end((err, res) => {
           should.not.exist(err);
-          res.status.should.equal(400);
-          expect(res.body).have.include.keys('message');
+          res.status.should.equal(500);
           done();
         });
     });
